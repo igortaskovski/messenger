@@ -38,6 +38,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'better_errors', '~> 2.9', '>= 2.9.1'
 gem 'devise', '~> 4.7', '>= 4.7.3'
+gem 'bootstrap', '~> 4.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
