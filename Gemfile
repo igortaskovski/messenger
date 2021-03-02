@@ -40,12 +40,12 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'better_errors', '~> 2.9', '>= 2.9.1'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'bootstrap', '~> 4.6'
+gem 'faker', '~> 2.16'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 4.0', '>= 4.0.2'
-  gem 'faker', '~> 2.16'
 end
 
 group :test do
