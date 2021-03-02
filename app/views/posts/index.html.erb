@@ -2,13 +2,13 @@
   <h4>RECENT POSTS</h4><hr>
 
   <% @posts.each do |post| %>
-    <div class="card w-75 mt-3 border-0">    
+    <div class="card mt-2">
       <div class="card-body">
         <h5 class="card-title"><%= post.title %></h5>
-        <p class="card-text">Author: <%= post.user.name %></p>
+        <p class="card-text"><%= truncate(post.body, length: 150) %></p>
+        <p>Author: <%= post.user.name %></p>
         <%= link_to 'Read More', post, class: "btn btn-primary" %>
       </div>
     </div>
-    <hr>
   <% end %>
 </div>
