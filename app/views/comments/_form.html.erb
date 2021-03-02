@@ -16,7 +16,7 @@
           </div>
         <% end %>
         <div class="form-group">
-          <%= f.text_area :body, class: "form-control", required: true %>
+          <%= f.text_area :body, id: "comment_body", class: "form-control", required: true %>
         </div>
         <%= f.hidden_field :post_id %>
         <%= f.hidden_field :user_id %>

@@ -7,7 +7,11 @@ class CommentsController < ApplicationController
 
   def create
     @comment = @post.comments.new(comment_params)
-    @comment.user_id = current_user.id
+    if user_signed_in? 
+      @comment.user_id = current_user.id
+    else
+      redirect_to new_user_session_path
+    end
 
     if @comment.save
       redirect_to @post
